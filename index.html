@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMNSHU - Artiste</title>
+  <meta name="title" content="its just himanshu.">
+  <meta name="description" content="a project to showcase (html,css,javascript) skills">
+
+
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/herobanner.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/bglog.png" width="170" height="40" alt="Pfolio home">
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#aboutme" class="navbar-link">about me</a>
+          </li>
+
+          <li>
+            <a href="#myint" class="navbar-link">interests</a>
+          </li>
+
+          <li>
+            <a href="#what" class="navbar-link">what i do</a>
+          </li>
+
+          <li>
+            <a href="#port" class="navbar-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#cont" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section id="aboutme" class="section hero" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Himanshu</h1>
+
+            <p class="hero-subtitle">
+              part-time designer and timepass illustrator.
+            </p>
+
+            <div class="hero-banner">
+              <img src="./assets/images/herobanner.jpg" width="800" height="800" alt="kane williams" class="w-100">
+            </div>
+
+            <p class="section-text">
+             Hi, i'm Himanshu. The thing is, i really wanted to make a portfolio website to showcase my (html,css,javascript) skills...but soon realized
+             i have no portfolio-worthy projects to project. So here's a (sort-of) portfolio/archive of my artwork :/
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section id="myint" class="service" aria-labelledby="service-label">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <p class="section-subtitle">
+                The stuff that gets me inspired
+              </p>
+
+              <h2 class="h2 section-title" id="service-label">interests</h2>
+            </div>
+
+            <p class="section-text">
+                growing up in the streets of JP, i was surrounded by visual art almost everywhere.
+                From the captivating TV shows to the immersive comics, and the expressive graffiti 
+                on forgotten buildings, it was intresting fosho. The animated discussions with my friends 
+                about the latest anime we were into or the typography of those corner food stalls, that’s
+                 what sparked my creativity initially.
+            </p>
+
+          </div>
+
+          <div class="slider" data-slider>
+
+            <ul class="slider-container service-list" data-slider-container>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <h3 class="h3 card-title">Cinema</h3>
+
+                  <p class="card-text">
+                    its captivating blend of visual storytelling and motion, has 
+                    profoundly influenced my passion for design and art.
+                    I discovered the power of composition, color, and movement.
+                    i have a Letterboxd account.
+                  </p>
+
+                  <span class="text-lg card-number">01</span>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <h3 class="h3 card-title">Anime</h3>
+
+                  <p class="card-text">
+                    Picture this: me, a kid with a bowl of popcorn, sprawled on the living room floor, eyes glued to the TV screen. What was I watching? Dragon Ball Z and Akira, of course! Those colorful characters, epic battles, and tear-jerking moments—pure magic. Little did I know that anime would be my gateway drug into the world of art and illustration.
+                  </p>
+
+                  <span class="text-lg card-number">02</span>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="color-filter-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Graphic Novels</h3>
+
+                  <p class="card-text">
+                    Comic book pages are graphic compositions. Balance, rhythm, and contrast guide layouts,
+                     leading readers through dynamic stories.Enough said.
+
+                  <span class="text-lg card-number">03</span>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="slider-controls">
+              <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section id="what" class="section skills" aria-label="our skills">
+        <div class="container">
+
+          <p class="section-subtitle">I Make Stuff</p>
+
+          <h2 class="h2 section-title">I create visually aesthetic work.</h2>
+
+          <div class="skills-wrapper">
+
+            <div>
+              <p class="section-text">
+                I’m all about bringing stories to life through my art. Whether it’s with a simple pencil or the latest digital tools like Krita and Photoshop, I’ve got a
+                 knack for making cool stuff. My designs? They’re like a mash-up of all the anime, comics, and films I love.
+              </p>
+
+              <a href="https://www.instagram.com/idk.himanshoe/" class="btn has-before">instagram.com/idk.himanshoe</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section id="port" class="portfolio" aria-labelledby="portfolio-label">
+
+        <div class="title-wrapper container">
+
+          <div>
+            <p class="section-subtitle" id="portfolio-label">Our Works</p>
+
+            <h2 class="h2 section-title">Portfolio</h2>
+          </div>
+
+          <p class="section-text">
+            Too many words. Here are some of my recent works.Let me know your thoughts *heart hands* 
+          </p>
+
+        </div>
+
+        <div class="slider" data-slider>
+
+          <ul class="slider-container" data-slider-container>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-1.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Cyberpunk Samurai</h3>
+
+                  <p class="card-text">Krita/PS</p>
+                </div>
+
+                <a href="#" class="layer-link"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-2.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Shinobi</h3>
+
+                  <p class="card-text">Krita+sketch</p>
+                </div>
+
+                <a href="#" class="layer-link"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-3.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Doodle Dragon</h3>
+
+                  <p class="card-text">regular sketch</p>
+                </div>
+
+                <a href="#" class="layer-link"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-4.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Recycled Residence</h3>
+
+                  <p class="card-text">illustration</p>
+                </div>
+
+                <a href="#" class="layer-link"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-5.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Delhi-Man vs BharathZilla</h3>
+
+                  <p class="card-text">fav work</p>
+                </div>
+
+                <a href="#" class="layer-link"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-6.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">she looks just like a dream</h3>
+
+                  <p class="card-text">mixed media</p>
+                </div>
+
+                <a href="#" class="layer-link"></a>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="slider-controls">
+            <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+              <div class="line"></div>
+              <div class="arrow"></div>
+            </button>
+
+            <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+              <div class="line"></div>
+              <div class="arrow"></div>
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer id="cont" class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Thank You, Let's Get in touch</p>
+        </li>
+
+        <li>
+          <a href="mailto:info@kwilliams.com" class="footer-link">himanshukm45@gmail.com</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Location (i'll pull up)</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Bengaluru South - Karnataka</a>
+        </li>
+
+      </ul>
+
+      <ul class="social-list">
+        <li>
+          <a href="https://www.instagram.com/idk.himanshoe/" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/himanshu-mahesh-703b56242/" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -9,7 +9,7 @@
   --eerie-black: rgb(12, 13, 19);
   --black: hsla(0, 0%, 0%, 1);
   --white: hsla(0, 0%, 100%, 1);
-  --white_a10: hsla(0, 0%, 100%, 0.1);
+  --white_a10: hsla(0, 5%, 66%, 0.1);
   --white_a5: hsla(0, 0%, 100%, 0.05);
 
   /**
@@ -18,8 +18,8 @@
 
   --ff-syne: 'Syne', sans-serif;
 
-  --fs-1: 4.5rem;
-  --fs-2: 4.4rem;
+  --fs-1: 4.8rem;
+  --fs-2: 4.5rem;
   --fs-3: 4rem;
   --fs-4: 2.4rem;
   --fs-5: 2rem;
@@ -138,7 +138,7 @@ body.nav-active { overflow: hidden; }
 .section { padding-block: var(--section-padding); }
 
 .h1 {
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
   font-weight: var(--fw-800);
 }
 
@@ -297,9 +297,6 @@ body.nav-active { overflow: hidden; }
   height: 100%;
   object-fit: cover;
 }
-
-
-
 
 
 /*-----------------------------------*\

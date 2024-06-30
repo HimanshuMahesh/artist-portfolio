@@ -9,8 +9,8 @@
   --eerie-black: rgb(12, 13, 19);
   --black: hsla(0, 0%, 0%, 1);
   --white: hsla(0, 0%, 100%, 1);
-  --white_a10: hsla(0, 5%, 66%, 0.1);
-  --white_a5: hsla(0, 0%, 100%, 0.05);
+  --white_a10: hsla(0, 6%, 79%, 0.545);
+  --white_a5: hsla(0, 0%, 100%, 0.538);
 
   /**
    * typography
@@ -34,7 +34,7 @@
    * spacing
    */
 
-  --section-padding: 100px;
+  --section-padding: 30px;
 
   /**
    * border radius
@@ -126,9 +126,6 @@ body.nav-active { overflow: hidden; }
 }
 
 
-
-
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -175,6 +172,75 @@ body.nav-active { overflow: hidden; }
   content: "";
   z-index: -1;
 }
+.my-button{
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .my-button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .my-button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .my-button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  .skills-image {
+    max-width: 90%; 
+    height: auto; 
+    margin: 20px; 
+    border-radius: 10px; 
+    float: right; 
+  }
+  
+  
+  .skills-wrapper {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+
+  .highlight {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333; 
+    padding: 1em;
+  }
+
+
 
 .btn {
   color: var(--white);
@@ -298,7 +364,6 @@ body.nav-active { overflow: hidden; }
   object-fit: cover;
 }
 
-
 /*-----------------------------------*\
   #PRELOADER
 \*-----------------------------------*/
@@ -338,15 +403,9 @@ body.nav-active { overflow: hidden; }
 }
 
 .preloader.loaded .circle { opacity: 0; }
-
-
-
-
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
-
 .header {
   position: fixed;
   top: 0;
@@ -436,22 +495,14 @@ body.nav-active { overflow: hidden; }
 }
 
 .overlay.active { display: block; }
-
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
-
 .hero { padding-block-start: 130px; }
-
 .hero-title {
   text-transform: uppercase;
   word-break: break-all;
 }
-
 .hero-subtitle {
   font-size: var(--fs-8);
   text-transform: uppercase;
@@ -497,10 +548,6 @@ body.nav-active { overflow: hidden; }
 
 .hero .btn { margin-inline: auto; }
 
-
-
-
-
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -542,10 +589,6 @@ body.nav-active { overflow: hidden; }
   --content-color: var(--white);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #SKILLS
 \*-----------------------------------*/
@@ -574,10 +617,6 @@ body.nav-active { overflow: hidden; }
   background-color: var(--white);
   border-radius: inherit;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #PORTFOLIO
@@ -648,10 +687,6 @@ body.nav-active { overflow: hidden; }
 
 .social-link:is(:hover, :focus-visible) { border-color: var(--white); }
 
-
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -694,10 +729,6 @@ body.nav-active { overflow: hidden; }
   .footer-list-title { margin-block-end: 8px; }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 768px screen
@@ -794,11 +825,6 @@ body.nav-active { overflow: hidden; }
   .footer .container { grid-template-columns: repeat(3, 1fr); }
 
 }
-
-
-
-
-
 /**
  * responsive for large than 992px screen
  */
@@ -818,9 +844,6 @@ body.nav-active { overflow: hidden; }
     --fs-3: 7rem;
 
   }
-
-
-
   /**
    * REUSED STYLE
    */
@@ -831,15 +854,11 @@ body.nav-active { overflow: hidden; }
 
   .slider { --slider-items: 3; }
 
-
-
   /**
    * HERO
    */
 
   .hero-subtitle { --fs-8: 1.4rem; }
-
-
 
   /**
    * SKILL
@@ -848,9 +867,6 @@ body.nav-active { overflow: hidden; }
   .skills .section-title { max-width: 16ch; }
 
   .skills-wrapper { gap: 10%; }
-
-
-
   /**
    * BLOG
    */
@@ -865,10 +881,6 @@ body.nav-active { overflow: hidden; }
   .blog-list li:nth-child(2n) .card-banner { order: 1; }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 1200px screen
@@ -889,17 +901,11 @@ body.nav-active { overflow: hidden; }
     --section-padding: 140px;
 
   }
-
-
-
   /**
    * REUSED STYLE
    */
 
   .container { max-width: 1140px; }
-
-
-
   /**
    * HEADER
    */
@@ -916,9 +922,6 @@ body.nav-active { overflow: hidden; }
   }
 
   .overlay { top: 0; }
-
-
-
   /**
    * HERO
    */

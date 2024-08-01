@@ -1,5 +1,7 @@
 # demo-art-portfolio
 This project showcases my skills in HTML, CSS, and JavaScript through a visually engaging and interactive site. Here’s a bit more about what you’ll find:
+![project screenshot (PC)](assets/images/portfolio-header.jpg)
+
 ## Overview
 HMNSHU is a portfolio website designed to highlight my work and interests. It’s crafted to be a blend of my passion for design and art, with a focus on providing an engaging user experience. The website features:
 

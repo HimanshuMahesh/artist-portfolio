@@ -1,4 +1,4 @@
-# demo-art-portfolio
+# artist-portfolio
 This project showcases my skills in HTML, CSS, and JavaScript through a visually engaging and interactive site. Here’s a bit more about what you’ll find:
 ![project screenshot (PC)](assets/images/portfolio-header.jpg)
 
